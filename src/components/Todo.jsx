@@ -41,6 +41,7 @@ export const Todo=()=>{
   
     return (
         <div>
+            <h1>TODO</h1>
             <input type="text" value={newTodo} onChange={({target})=>setNewTodo(target.value)} />
             <button onClick={handleClick} >+</button>
             <Posts key={todos.id} todos={todos} />

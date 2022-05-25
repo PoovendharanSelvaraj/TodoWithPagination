@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Timer from './components/Timer';
-// import { Todo } from './components/Todo';
+ import { Todo } from './components/Todo';
 
 function App() {
   const [timer,setTimer]=useState(0)
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Todo/> */}
+      <Todo/>
       <Timer timer={timer}  end={end} setTimer={setTimer}  />
     </div>
   );
