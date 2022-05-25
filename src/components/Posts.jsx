@@ -6,7 +6,7 @@ export const Posts=({todos})=>{
         <div>
           {todos.map((d)=>{
              return (
-                  <h2>{d.text}</h2>
+                  <h2 key={d.id}>{d.text}</h2>
              )
           })}
         </div>
